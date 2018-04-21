@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="Shortcut Icon" type="image/x-icon" href="./images/web_title_img.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Bootstrap4 餐廳練習">
+    <meta name="keywords" content="Bootstrap4, 網頁, 設計, UI, Website, 前端, 切版, taiwan , Dang-hao">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bootstrap 4 餐廳練習</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/restaurant.css">
+</head>
+
+<body>
+
+    <div class="py-2 bg-secondary">
+        <div class="container text-right">
+            <a href="#" class="text-white mr-2">
+                <i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="#" class="text-white mr-2">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="text-white mr-2">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-white mr-2">
+                <i class="fab fa-twitch"></i>
+            </a>
+        </div>
+    </div>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">蔬果口味</a>
+                            <a class="dropdown-item" href="#">沒肉不舒服</a>
+                            <a class="dropdown-item" href="#">調味醬</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <button type="button" data-toggle="modal" data-target="#signIn" class="btn btn-outline-primary mx-3">登入</button>
+                    <button type="button" data-toggle="modal" data-target="#signUp" class="btn btn-primary">註冊</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--navbar end-->
+    <!--sign in & sign up modal-->
+    <!--sign in-->
+    <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">登入</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="needs-signIn" novalidate>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <div class="invalid-feedback">
+                                請輸入e-mail
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                            <div class="invalid-feedback">
+                                請輸入密碼
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#signUp" data-dismiss="modal" data-toggle="modal">還沒有帳號嗎?</a>
+                    <button type="button" class="btn btn-secondary ml-auto" data-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-primary">登入</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--sign in end-->
+    <!--sign up-->
+    <div class="modal fade bd-example-modal-lg" id="signUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title " id="exampleModalLabel">註冊</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>註冊六角西餐廳</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt error neque sint dicta inventore
+                                quas consequuntur ducimus. Distinctio asperiores nisi a suscipit. Repellendus sequi expedita
+                                fuga assumenda dolorem voluptatibus quia.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias iure libero reiciendis sint beatae
+                                ratione quaerat? Illum voluptatibus quis quasi eveniet amet veniam laudantium laboriosam
+                                incidunt vero! Similique, libero delectus.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="" class="needs-signUp" novalidate>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    <div class="invalid-feedback">
+                                        請輸入e-mail
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword2">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                    <div class="invalid-feedback">
+                                        請輸入密碼
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#signIn" class="mr-auto" data-dismiss="modal" data-toggle="modal">已經有帳號</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-primary">註冊</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--sign up end-->
+    <!--sign in & sign up modal end-->
+    <!--carousel-->
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item header-carousel-item bg-cover active" style="background-image:url(https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86c8c1fd5e9e5b384696472a095c42ac&auto=format&fit=crop&w=1024&q=80)">
+                    <div class="carousel-caption d-none d-md-block px-3">
+                        <h3>一個人，田野間的輕鬆美味</h3>
+                        <p>城小中假上問，洲元化究變快歡專，臺正機上色從多空放我。來來中的來落行間我海府子成隨上事女，的石在朋經以定空他；級病期他，會性前集一於得當院應對分！意斯能己水成神錢。</p>
+                    </div>
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover" style="background-image:url(https://images.unsplash.com/photo-1494390248081-4e521a5940db?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73a27b0f1231b46fad892c62f220b9d8&auto=format&fit=crop&w=1024&q=80)">
+                    <div class="carousel-caption d-none d-md-block px-3">
+                        <h3>大口的放縱，毫無保留</h3>
+                        <p>組道心深的起一強理重麼變喜才她起寶事運果引物；生一越。為己的治應的了：有的兩懷華場前間不不存力：性張得燈表年健交公言要認才部黨岸家深此一和國專女特希這密年那報。</p>
+                    </div>
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover" style="background-image:url(https://images.unsplash.com/photo-1448043552756-e747b7a2b2b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=33b0e638540ff8ab1325e2ed73bafd58&auto=format&fit=crop&w=1024&q=80)">
+                    <div class="carousel-caption d-none d-md-block px-3">
+                        <h3>愛戀的赤裸裸辣辣</h3>
+                        <p>件臺水則的看方府機英下英影加非！為走改幾少我住準愛地下。巴開上人在，但雜處權音生什有會能教！還話弟手大了。</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <!--carousel end-->
+    <!--三欄式-->
+    <section class="bg-info py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-white">
+                    <div class="mb-2">
+                        <i class="fas fa-5x fa-arrow-alt-circle-down"></i>
+                    </div>
+                    <h3 class="mb-3">忘卻不了的莓果香</h3>
+                    <p class="mb-5">沒有遺憾的愛過、支持過他們，在商言商，他們總是假設：喔，但相信我。可是已經晚了……請你以後不要在我面前說英文了。</p>
+                </div>
+                <div class="col-md-4 text-white">
+                    <div class="mb-2">
+                        <i class="fas fa-5x fa-arrow-alt-circle-down"></i>
+                    </div>
+                    <h3 class="mb-3">積沈在心中的漣漪</h3>
+                    <p class="mb-5">但是當有機會時，但因為你是誠實且對此公平的，雪季可以延續4個月甚至5個月。摩挲著你的顏面，至少你不能完全抱怨荊棘，假如我在萬里外接到你的死耗，小馬，裝一個農夫，可以恣嘗鮮味。</p>
+                </div>
+                <div class="col-md-4 text-white">
+                    <div class="mb-2">
+                        <i class="fas fa-5x fa-arrow-alt-circle-down"></i>
+                    </div>
+                    <h3 class="mb-3">放不下的體脂肪</h3>
+                    <p class="mb-5">那就結婚吧我沒有妳會死，什麼都別說了，我什麼都不要，但我可以肯定地告訴你，前世的五百次回眸，沒有妳我的人生沒有意義。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--三欄式 end-->
+    <!--兩欄式 -->
+    <section class="container-fluid py-5 bg-light text-white" style="position:relative">
+        <div class="row">
+            <div class="col-md-5 bg-cover" style="
+            position:absolute; top:0; bottom:0;
+            background-image:url(https://images.unsplash.com/photo-1498654831517-895a5dfe4edc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e2cc110472c9c64afd45f45fe1fc0b4e&auto=format&fit=crop&w=1050&q=80)">
+            </div>
+            <div class="container">
+                <div class="row justify-content-end text-md-white">
+                    <div class="col-md-7">
+                        <h3>歡迎來到六角餐廳</h3>
+                        <p>遇到這些灰色道德地帶時，要到兩三年後才會比較有清楚的感受，而這正是為什麼西方公司會存活，作為一個年輕人，但是負責的人需要接受風險、喜歡冒險和願意負責。2，流感病毒攻心，春電展將開展，NBA明星周，低價電信資費戰，曼城主場連勝。</p>
+                        <button class="btn btn-outline-info">了解更多</button>
+                        <div class="row my-4">
+                            <div class="col-md-6">
+                                <h4>像含羞草似的嬌柔</h4>
+                                <p>遍地烽火，台電影星空，Galaxy，鄧志偉揮巨炮，近兩年最大，國內油價連3漲，上學遇到洪七公。</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>老師可不可以補交</h4>
+                                <p>歐洲和其他國家，現在世界已經變了，在這段感情中，讓情況越來越糟糕，台灣甚至更小、天然資源更少，身形高挑像是一個模特兒，只會讓事情更混亂，我依然盯著窗外圓山飯店的燈光。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--兩欄式 end-->
+    <!--兩欄式-->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center my-3">如何這麼美味</h2>
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3">
+                            <i class="fas fa-info fa-4x"></i>
+                        </div>
+                        <div>
+                            <h3>美艷的食材</h3>
+                            <p>工作，那麼你至少得吃一對兒鯨魚……我身邊的朋友們啊，沒有錢，但又找不到出路．如果多吃魚可以補腦讓人變聰明的話，珍惜生活上帝還讓你活著，年老的時候，然後選中一張百元大鈔。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3">
+                            <i class="fas fa-info fa-4x"></i>
+                        </div>
+                        <div>
+                            <h3>里隧道貫</h3>
+                            <p>呂明賜帶中華隊，Mark，禽流感驚爆，勸進不斷，新恐龍化石研究"雷克斯暴龍的叔公"。生，生，樹不要皮，年輕的時候，.人怕出名豬怕壯，睡你的老公，.人怕出名豬怕壯，可是已經晚了……請你以後不要在我面前說英文了。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3">
+                            <i class="fas fa-info fa-4x"></i>
+                        </div>
+                        <div>
+                            <h3>是貝德花芬是槐格納</h3>
+                            <p>再也不出聲不鬧：并且你有的是可驚的口味，不能怨，我見著的只你的遺像，就是你媽，他年紀雖則小，最有資格指證或相詮釋。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3">
+                            <i class="fas fa-info fa-4x"></i>
+                        </div>
+                        <div>
+                            <h3>我跳出計程車跑向大直美麗華</h3>
+                            <p>星巴克，他到了，而這正是為什麼西方公司會存活，而隨著你慢慢長大變老並開始面對這些困難的選擇時，根據你和這三個主要地區員工談話和面試的經驗。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--兩欄式 end-->
+    <!--兩欄式-->
+    <section class="container-fluid py-5 bg-light" style="position:relative;">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-md-7 text-md-white" style="position:relative;z-index:1">
+                    <h3>讓快樂持續發生</h3>
+                    <p>在每個機會裡，但現在這些亞洲父母來了，懷疑自己是否重要，到底你自己的感覺是什麼。</p>
+                    <dl class="row">
+                        <dt class="col-sm-3 ">不吃飽哪有力氣減肥啊？</dt>
+                        <dd class="col-sm-9">邊，是貝德花芬是槐格納你就愛，再也不出聲不鬧：并且你有的是可驚的口味，不能怨，我見著的只你。</dd>
+                        <dt class="col-sm-3 ">愛你，愛你，我們真的羡慕</dt>
+                        <dd class="col-sm-9">錢立地就成富豪勢力家，他叩了不少下頭，和別的其餘的一日，是怎樣生竟不如其死？我，愛你，愛你，我們真的羡慕，我猜想，卻沒有同樣的碎痕，雪西裡與普陀山，沒福見著你的父親，想中止也不可能。</dd>
+                        <dt class="col-sm-3 ">我再來歐洲你已經早</dt>
+                        <dd class="col-sm-9">這才覺著父性的愛像泉眼似的在性靈裏汩汩的流出：只可惜是遲了，講給我聽你得小提琴的故事：怎樣那晚上買琴來的時候你已經在你的小床上睡好。</dd>
+                        <dt class="col-sm-3 text-truncate">假如你單是站著看還不滿意時</dt>
+                        <dd class="col-sm-9">這時候想回頭已經太遲，只是這無恩的長路，還是有人成心種著的？</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-md-5 bg-cover " style="
+                    position:absolute; top:0; bottom:0;
+                    background-image:url(https://images.unsplash.com/photo-1508061050821-a31b8e0a9995?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=01e99b5a296c49aa16d861407130dbd0&auto=format&fit=crop&w=1050&q=80)">
+            </div>
+        </div>
+    </section>
+    <!--兩欄式 end-->
+    <!--google form表單-->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2149.580983731022!2d121.4523721180761!3d25.028986933298665!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a87255996d37%3A0x89a8de1d0fed5d87!2z5paw5pyI5qmL!5e0!3m2!1szh-TW!2stw!4v1523454183962"
+                        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                    <form action="" class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="enter-name">姓名*</label>
+                            <input type="text" class="form-control" id="enter-name" required placeholder="請輸入姓名">
+                            <div class="invalid-feedback">
+                                請輸入姓名
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="enter-phone">請輸入電話號碼*</label>
+                            <input type="tel" class="form-control" id="enter-phone" required placeholder="請輸入電話號碼">
+                            <div class="invalid-feedback">
+                                請輸入電話號碼
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="enter-email">請輸入E-mail</label>
+                            <input type="email" class="form-control" id="enter-email" required placeholder="name@example.com">
+                            <div class="invalid-feedback">
+                                請輸入E-mail
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="enter-number">請輸入人數*</label>
+                            <input type="number" class="form-control" id="enter-number" required placeholder="請選擇人數">
+                            <div class="invalid-feedback">
+                                請輸入人數
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="selectVegan" id="Vegan" required>
+                                <label class="custom-control-label" for="Vegan">需要素食</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="selectVegan" id="noVegan" required>
+                                <label class="custom-control-label" for="noVegan">不需要素食</label>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="row">
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-secondary btn-block">取消</button>
+                                </div>
+                                <div class="col-8">
+                                    <button type="submit" class="btn btn-primary btn-block">送出</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--google form表單 end-->
+    <!--兩欄式-->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 p-5 bg-cover" style="background-image:url(https://images.unsplash.com/photo-1514516702655-8d42ae4e8f89?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce36e3750b675a44eaab4407360648b2&auto=format&fit=crop&w=634&q=80);">
+                <div class="row">
+                    <div class="col-md-9">
+                        <small>加入我們</small>
+                        <h3>你便乖乖的把琴抱進你的床去，你是不認識你父親的</h3>
+                        <p>短暫的激情是不值錢的，年代的人還需要摔打，別人一定會聽你，但它只是一環，80年代的人不要跟70年代，別人可以拷貝我的模式，一個成功的創業者，東西得一點點幹，也要注重過程，千萬別告訴別人，賺錢模式越多越說明你沒有模式。</p>
+                        <a href="#" class="btn btn-outline-primary ">加入我們</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-5 bg-cover text-white" style="background-image:url(https://images.unsplash.com/photo-1499125562588-29fb8a56b5d5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=be54d2b29df678372688979bc43f3529&auto=format&fit=crop&w=1189&q=80)">
+                <div class="row">
+                    <div class="col-md-9">
+                        <small>品嚐佳餚</small>
+                        <h3>踏著浪，我和世界不一樣，太多堅持</h3>
+                        <p>一度剝落了的青春，寂寞的床偌大的房，我和我的倔強不能在shopping時候想你在路上會­遇見怎樣的穹蒼？戀人之間的時光，怎麼又是你，都騎虎難下了，唉呀，環境維護的話，發牢騷之前，打架了，大家不要吵架，我再也不逃了，我們回去了，謝謝，最恐怖的人，既然媽媽決定了，就算是死，辣辣的，一定很好吃。</p>
+                        <a href="#" class="btn btn-outline-warning ">加入我們</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--兩欄式 end-->
+    <!--footer-->
+    <footer>
+        <div class="container p-4 text-secondary">
+            © Copright 2017 六角學院
+            <a class="mx-2" href="#">GitHub</a>
+            <a class="mx-2" href="#">Facebook</a>
+            <a class="mx-2" href="#">About</a>
+        </div>
+    </footer>
+    <!--footer end-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/restaurant.js"></script>
+</body>
+
+</html>
